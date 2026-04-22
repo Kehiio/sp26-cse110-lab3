@@ -6,6 +6,9 @@
     <title>Planter-Box Meeting Notes</title>
     <link rel="icon" type="image/plant-icon" href="assets/16BY16PlanterBox.ico">
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+    </style>
 </head>
 <body>
     <header>
@@ -94,8 +97,9 @@
 
         <hr>
 
-        <section>
-            <h2 id="NewBusiness">New Business</h2>
+        <h2>New Business</h2>
+        <section id="newbusiness-section" >     
+            <div class ="content-wrap"> 
             <p>
                 The project we will be working on is developing a cute desktop robot that
                 helps users stay <b>productive</b> and build healthy habits. The only contraints given thus far
@@ -116,18 +120,22 @@
                 <li>Break mode vs working mode faces</li>
                 <li>Cloud stores activities logged, and not being consistant makes the robot appear sad</li>
             </ul>
+            </div>
 
+            <div class="image-wrap">
             <p>Inspiration picture</p>
             <img src="https://hackster.imgix.net/uploads/attachments/1920203/_mtsNW7wWUH.blob?auto=&format=jpg"
                 alt="Mochan Robot inspiration"
                 width="600">
+            </div>
 
         </section>
         <hr>
 
         <hr>
-        <section>
-            <h2 id="Materials">Supplimental Materials</h2>
+        <h2 id="Materials">Supplimental Materials</h2>
+        
+        <section id="materials-section">
                 <video width="320" height="240" controls>
                 <source src="assets/MeetingVideo.mp4" type="video/mp4">
                 </video>
@@ -139,9 +147,9 @@
         </section>
         <hr>
 
-        <section>
+        <section class="QNA">
             <h2 id="QNA">Misc and Q&A</h2>
-            <details>
+            <details class="toggle">
                 <summary>What is the budget for this project?</summary>
                 <p>Exact figures are unknown, but for material costs its ~$5,000.</p>
             </details>
@@ -150,8 +158,12 @@
                 <p>This is also undecided. Will speak with management and get back to you next meeting.</p>
                 
             </details>
+        </section>
 
-            <h3>Party Form</h3>
+        <h3 class="partyHead">Party Form</h3>
+
+        <section class="party">
+            
             <form>
                 <label for="nameBox">Name:</label><br>
                 <input type="text" id="nameBox" name="name"><br>
