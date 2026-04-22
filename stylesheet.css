@@ -18,8 +18,8 @@ body {
 /* Box Model */
 /* Margin short, padding short, border short */
 p, div {
-    padding: 40px, 20px, 20px, 40px;
-    margin: 10px, 10px, 10px, 10px;
+    padding: 40px 20px 20px 40px;
+    margin: 10px 10px 10px 10px;
     border: 10px;
     display: inline;
 }
@@ -149,6 +149,7 @@ datalist > option {
 
 
 .partyHead{
+    background-color: rgb(191, 153, 191); /* fallback*/
     background-color: color(display-p3 0.75 0.6 .75);
 
 }
@@ -175,7 +176,7 @@ datalist > option {
     display: flex;
     flex-direction: column; 
     gap: 20px;
-    padding: 10px, 10px, 10px, 10px;
+    padding: 10px 10px 10px 10px;
     border-width: 4pt;
 }
 
@@ -215,5 +216,3 @@ datalist > option {
     }
 
 }
-
-
