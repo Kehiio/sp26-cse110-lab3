@@ -1,0 +1,30 @@
+
+
+body {
+    background-color: #e9ebf8;
+}
+
+/* Box Model */
+/* Margin short, padding short, border short */
+p {
+    padding: 40px, 20px, 20px, 40px;
+    margin: 10px, 10px, 10px, 10px;
+    border: 10px;
+}
+
+/* Margin long, padding long, border long */
+h1 {
+    border-style: outset;
+    border-width: 4px;
+    border-color: darkslategray;
+    border-radius: 5px;
+    background-color: #8cc5aa;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(48, 42, 45);
+    text-decoration: underline rgb(233, 235, 248);
+}
+
