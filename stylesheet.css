@@ -13,18 +13,33 @@ p {
 }
 
 /* Margin long, padding long, border long */
+/* Unqiue absolute units: px, mm, pt*/
+/* Colors: name, rgb, hex, hsl      */
+/* Text color, decoration, align    */
 h1 {
     border-style: outset;
-    border-width: 4px;
+    border-width: 4pt;
     border-color: darkslategray;
     border-radius: 5px;
     background-color: #8cc5aa;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3mm;
+    padding-bottom: 3mm;
     padding-left: 5px;
     padding-right: 5px;
-    color: rgb(48, 42, 45);
+    color: hsl(330, 7%, 18%);
     text-decoration: underline rgb(233, 235, 248);
+
 }
+
+h2 {
+    background-color: #d5d9f3;
+    padding-top: 2mm;
+    padding-bottom: 2mm;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+
 
