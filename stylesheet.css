@@ -1,0 +1,219 @@
+.bubblegum-sans-regular {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+* {
+    --default-text-color: hsl(330, 7%, 18%);
+}
+
+body {
+    background-color: #e9ebf8;
+    color: var(--default-text-color, black);
+
+}
+
+/* Box Model */
+/* Margin short, padding short, border short */
+p, div {
+    padding: 40px, 20px, 20px, 40px;
+    margin: 10px, 10px, 10px, 10px;
+    border: 10px;
+    display: inline;
+}
+
+/* Margin long, padding long, border long */
+/* Unqiue absolute units: px, mm, pt*/
+/* Colors: name, rgb, hex, hsl      */
+/* Text color, decoration, align    */
+/* Variable with fall back          */
+#title {
+    font-family: "Bubblegum Sans", sans-serif;
+    border-style: outset;
+    border-width: 4pt;
+    border-color: darkslategray;
+    border-radius: 5px;
+    background-color: #8cc5aa;
+    text-align: center;
+    padding-top: 3mm;
+    padding-bottom: 3mm;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: var(--default-text-color, black);
+    text-decoration: underline rgb(233, 235, 248);
+
+    position: static;
+
+
+
+}
+
+header:has(p) {
+    a {
+        color: royalblue;
+
+    }
+
+    a:hover{
+        color: blue;
+    }
+
+    
+}
+
+/* Display: block*/
+h2 {
+    font-family: "Bubblegum Sans", sans-serif;
+    background-color: #d5d9f3;
+    padding-top: 2mm;
+    padding-bottom: 2mm;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    position: relative;
+    display: block;
+
+}
+
+h2 ~ p {
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+ul li {
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+div + p {
+    padding-top: 3mm;
+    padding-bottom: 3mm;
+}
+
+datalist > option {
+    color: black;
+}
+
+
+/* Relative units em, %*/
+/* sizing: min/max width/height*/
+.button {
+    background-color: darkslategray;
+    color: white;
+    padding: 1em 1em;
+    border-radius: 8px;
+    min-width: 40px;
+    min-height: 30px;
+    max-width: 100px;
+    max-height: 80%;
+
+}
+
+/* Color mix */
+.button:hover {
+    background-color: color-mix(in srgb, darkslategray, white 20%);
+}
+.button:active {
+    background-color: rgb(95, 51, 58);
+}
+
+/* flexbox atributes */
+#newbusiness-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  align-items: flex-start;
+  gap: 40px; /* Space between text and image */
+  padding: 20px;
+}
+/* Relative unit: vw*/
+.content-wrap {
+  flex: 2; 
+  min-width: 27vw
+}
+.image-wrap {
+  flex: 1;
+  text-align: center;
+  min-width: 18vw
+}
+
+/* prevent spilling */
+.image-wrap img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+.partyHead{
+    background-color: color(display-p3 0.75 0.6 .75);
+
+}
+
+.party{
+    display: flex;
+    gap: 20px;
+    border-style: outset;
+    border-width: 4pt;
+    border-color: darkslategray;
+    border-radius: 5px;
+    background-color: #e7cedb;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: var(--default-text-color, black);
+    margin-bottom: 20px;
+}
+
+
+
+.QNA{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    padding: 10px, 10px, 10px, 10px;
+    border-width: 4pt;
+}
+
+/* Grid */
+#materials-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+    align-self: center;
+}
+
+
+/* Ajustment to row for mobile, make column*/
+@media (max-width: 768px) {
+    #newbusiness-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .image-wrap img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        border: 5px solid #81c784; 
+    }   
+
+    #materials-section{
+        grid-template-rows: 1fr; 
+        grid-template-columns: none;
+        gap: 40px;
+        padding: 40px;
+        align-items: center;
+    }
+
+}
+
+
