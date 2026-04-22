@@ -5,7 +5,7 @@
 }
 
 
-:root {
+* {
     --default-text-color: hsl(330, 7%, 18%);
 }
 
@@ -17,7 +17,7 @@ body {
 
 /* Box Model */
 /* Margin short, padding short, border short */
-p {
+p, div {
     padding: 40px, 20px, 20px, 40px;
     margin: 10px, 10px, 10px, 10px;
     border: 10px;
@@ -29,7 +29,7 @@ p {
 /* Colors: name, rgb, hex, hsl      */
 /* Text color, decoration, align    */
 /* Variable with fall back          */
-h1 {
+#title {
     font-family: "Bubblegum Sans", sans-serif;
     border-style: outset;
     border-width: 4pt;
@@ -50,6 +50,19 @@ h1 {
 
 }
 
+header:has(p) {
+    a {
+        color: royalblue;
+
+    }
+
+    a:hover{
+        color: blue;
+    }
+
+    
+}
+
 /* Display: block*/
 h2 {
     font-family: "Bubblegum Sans", sans-serif;
@@ -63,6 +76,27 @@ h2 {
     display: block;
 
 }
+
+h2 ~ p {
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+ul li {
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+div + p {
+    padding-top: 3mm;
+    padding-bottom: 3mm;
+}
+
+datalist > option {
+    color: black;
+}
+
 
 /* Relative units em, %*/
 /* sizing: min/max width/height*/
