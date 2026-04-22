@@ -10,12 +10,12 @@ p {
     padding: 40px, 20px, 20px, 40px;
     margin: 10px, 10px, 10px, 10px;
     border: 10px;
-    text-strong-color: #43b7ff;
 }
 
 /* Margin long, padding long, border long */
 /* Unqiue absolute units: px, mm, pt*/
-/* Colors: name, rgb, hex, hsl*/
+/* Colors: name, rgb, hex, hsl      */
+/* Text color, decoration, align    */
 h1 {
     border-style: outset;
     border-width: 4pt;
@@ -29,6 +29,7 @@ h1 {
     padding-right: 5px;
     color: hsl(330, 7%, 18%);
     text-decoration: underline rgb(233, 235, 248);
+
 }
 
 h2 {
